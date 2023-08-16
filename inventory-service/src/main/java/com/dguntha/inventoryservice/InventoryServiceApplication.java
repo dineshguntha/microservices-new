@@ -1,6 +1,7 @@
 package com.dguntha.inventoryservice;
 
 import com.dguntha.inventoryservice.model.Inventory;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.boot.CommandLineRunner;
 import com.dguntha.inventoryservice.repository.InventoryRepository;
@@ -8,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableEurekaClient
 public class InventoryServiceApplication
 {
     public static void main(final String[] args) {
